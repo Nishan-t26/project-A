@@ -1,4 +1,11 @@
 :root {
+    .navbar{
+        display: flex;
+        .item{
+            padding-left:20px;
+            
+        }
+    }
   
 }
 
