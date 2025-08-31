@@ -2,12 +2,10 @@ import  Express  from "express";
 
 const router= Express.Router()
 
-router.post("/",async(req,res)=>{
+router.post("/test",async(req:Express.Request,res:Express.Response)=>{
     console.log("hit")
 
 })
-router.route("/").get()
-router.route("/:id").patch()
-router.route("/:id").delete()
+
 
 export default router
