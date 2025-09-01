@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
+
+    "rootDir": "./",
     "outDir": "./dist",
 
     "module": "commonjs",
@@ -17,5 +18,9 @@
     "strict": true,
     "jsx": "react-jsx",
     "skipLibCheck":true,
-}
+},
+"include": ["src", "models"],  // explicitly include models folder
+"exclude": ["node_modules"]
+
+
 }
