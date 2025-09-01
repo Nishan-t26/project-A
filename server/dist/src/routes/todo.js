@@ -8,7 +8,7 @@ const user_1 = __importDefault(require("../../models/user"));
 const router = express_1.default.Router();
 // POST /
 router.post("/test1", async (req, res) => {
-    console.log("hit");
+    console.log("hit", req);
     const newUser = new user_1.default({
         userID: "Alice",
         name: "alample.com",

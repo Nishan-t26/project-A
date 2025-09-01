@@ -19,7 +19,7 @@
     "jsx": "react-jsx",
     "skipLibCheck":true,
 },
-"include": ["src", "models"],  // explicitly include models folder
+"include": ["src", "models","routes"], 
 "exclude": ["node_modules"]
 
 

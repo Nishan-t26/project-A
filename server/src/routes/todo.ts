@@ -5,7 +5,7 @@ const router = Express.Router();
 
 // POST /
 router.post("/test1", async (req, res) => {
-  console.log("hit");
+  console.log("hit",req);
   const newUser = new UserModal({
     userID: "Alice",
     name: "alample.com",
