@@ -2,9 +2,11 @@ import express, { type NextFunction, type Request,type Response } from "express"
 import todoRoutes from "./routes/todo.js"
 import bodyParser from "body-parser"
 import connectDB from "./db.js"
+import cors from "cors"
 const app =express()
 const port=8080
 
+app.use(cors())
 
 connectDB();
 app.use(bodyParser.json())

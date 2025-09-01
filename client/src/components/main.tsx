@@ -6,14 +6,9 @@ const Main=()=>{
     const [name,setName]=useState<String>("")
     const [address,setAddress]=useState<String>("")
 
-    const submit=()=>{
-        axios.post("http://localhost:8080/todo/test1",{name,address})
-        .then(response => {
-            console.log(response.data);
-        })
-        .catch(error => {
-        console.error(error);
-  });
+    const submit=async()=>{
+       
+ 
     }
 return(<>
 <div className="wrapper">
